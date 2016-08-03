@@ -1,5 +1,5 @@
 class UpdateServiceController < ApplicationController
-	def index
+	def update_service
   		@users = User.all
 	end
 end

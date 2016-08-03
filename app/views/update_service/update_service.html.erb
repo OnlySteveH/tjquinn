@@ -1,5 +1,17 @@
+
+    <table>
+    	<tr>
+    		<th>Name</th>
+    		<th>Service Sales</th>
+    		<th>Retial Sales</th>
+    	</tr>
+
 <% @users.each do |user| %>
-    <li>
-        <%= link_to user.first_name, user %>
-    </li>
+
+	    <tr>
+	        <th><%= link_to user.first_name %></th>
+	      
+	    </tr>
+	
 <% end %>
+</table>
