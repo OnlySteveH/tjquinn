@@ -1,0 +1,19 @@
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Service Sales</th>
+		<th>Retail Sales</th>
+	</tr>
+	
+<% @users.each do |user| %>
+	<tr>
+		<td><%= user.last_name %>, <%= user.first_name %></td>
+		<%= simple_form_for @service_sales do |f| %>
+		<td><%= f.input :service_sales %></td>
+		
+  			<%= f.button :submit %>
+<% end %>
+
+	</tr>
+<% end %>
+</table>

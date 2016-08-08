@@ -1,0 +1,15 @@
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Service Sales</th>
+		<th>Retail Sales</th>
+	</tr>
+	
+<% @users.each do |user| %>
+	<tr>
+		<td><%= user.last_name %>, <%= user.first_name %></td>
+		<td><%= user.sale %></td>
+
+	</tr>
+<% end %>
+</table>
